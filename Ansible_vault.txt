@@ -1,0 +1,7 @@
+To manage Ansible Vault:
+
+ansible-vault edit sample_file.txt
+ansible-vault rekey sample_file.txt
+ansible-vault decrypt sample_file.txt
+ansible-vault encrypt sample_file.txt
+ansible-vault view sample_file.txt
