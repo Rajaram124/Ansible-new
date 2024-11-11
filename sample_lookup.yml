@@ -1,0 +1,8 @@
+- hosts: dev
+  gather_facts: false
+  strategy: free
+  vars:
+    a: "{{ lookup ('file', '/root/sample.txt')}}"
+  tasks:
+    - debug:
+        msg: "hai, my user name is {{a}}"
