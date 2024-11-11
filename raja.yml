@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: create user
+      user: name=revi state=present
+    - name: install tree
+      yum: name=tree state=present
