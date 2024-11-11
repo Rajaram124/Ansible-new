@@ -1,0 +1,11 @@
+- hosts: all
+  become: yes
+  - name: installing apache
+    yum: name=httpd state=present
+    notify: starting apache
+
+  handlers:
+  - name: starting apache
+    yum: name=httpd state=started
+
+ 
